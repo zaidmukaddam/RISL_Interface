@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 export default {
   expo: {
     name: 'sahayak',
@@ -12,7 +11,7 @@ export default {
       backgroundColor: '#ffffff',
     },
     updates: {
-      fallbackToCacheTimeout: 0,
+      fallbackToCacheTimeout: 2,
     },
     assetBundlePatterns: ['**/*'],
     ios: {

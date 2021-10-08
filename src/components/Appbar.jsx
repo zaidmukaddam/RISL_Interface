@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-shadow */
 /* eslint-disable react/jsx-props-no-spreading */
@@ -20,8 +19,8 @@ const Header = (props) => {
     options.headerTitle !== undefined
       ? options.headerTitle
       : options.title !== undefined
-      ? options.title
-      : scene.route.name;
+        ? options.title
+        : scene.route.name;
 
   return (
     <View>

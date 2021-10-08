@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
@@ -64,11 +63,10 @@ const GestureRecognitionScreen = () => {
           <MaterialCommunityIcons
             name={
               prediction
-                ? `${
-                    numerics.match(prediction[prediction.length - 1])
-                      ? 'numeric'
-                      : 'alpha'
-                  }-${prediction[prediction.length - 1]}-box-outline`
+                ? `${numerics.match(prediction[prediction.length - 1])
+                  ? 'numeric'
+                  : 'alpha'
+                }-${prediction[prediction.length - 1]}-box-outline`
                 : 'checkbox-blank-outline'
             }
             size={120}
@@ -121,7 +119,7 @@ const GestureRecognitionScreen = () => {
         onDismiss={() => setSnackbar(false)}
         action={{
           label: 'Okay',
-          onPress: () => {},
+          onPress: () => { },
         }}
       >
         Internet Connection Unavailable

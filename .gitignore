@@ -1,5 +1,6 @@
 # Expo
 .expo
+.expo-shared/
 __generated__
 web-build
 
@@ -45,6 +46,7 @@ xcuserdata
 .settings
 
 # VSCode
+.vscode/
 .history/
 
 # Android

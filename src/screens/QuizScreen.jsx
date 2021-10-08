@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-use-before-define */
 /* eslint-disable global-require */
@@ -55,9 +54,8 @@ const QuizScreen = (props) => {
       <View style={styles.quiz}>
         <Surface style={styles.surface}>
           <MaterialCommunityIcons
-            name={`${
-              numerics.match(letter) ? 'numeric' : 'alpha'
-            }-${letter}-box-outline`}
+            name={`${numerics.match(letter) ? 'numeric' : 'alpha'
+              }-${letter}-box-outline`}
             size={150}
             color={colors.text}
             style={{
@@ -73,7 +71,7 @@ const QuizScreen = (props) => {
                 <Button mode="contained">Skip</Button>
               </View>
             </TouchableRipple>
-            <TouchableRipple onPress={() => {}} style={styles.button}>
+            <TouchableRipple onPress={() => { }} style={styles.button}>
               <View>
                 <Button
                   mode="contained"

@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-shadow */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-use-before-define */
@@ -12,6 +11,8 @@ import {
   Text,
   View,
   TouchableOpacity,
+  Image,
+  Dimensions
 } from 'react-native';
 import { Camera } from 'expo-camera';
 import {
@@ -58,7 +59,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-
+const styles2 = StyleSheet.create({
+  img: {
+    margin: 20,
+    height: 25,
+    width: 26,
+    padding: 0,
+  },
+  cam: {
+    width: 70,
+    height: 70,
+    right: Dimensions.get('window').width * -0.001
+  }
+});
 export default function CameraScreen({ predict }) {
   let camera;
   const [hasPermission, setHasPermission] = useState(null);
@@ -137,14 +150,17 @@ export default function CameraScreen({ predict }) {
             onPress={flipCamera}
             disabled={loading}
           >
-            <Text style={styles.text}>Flip</Text>
+            <Image
+              style={styles2.img}
+              source={require('../../assets/img/flip.png')}
+            />
           </TouchableOpacity>
           <TouchableRipple
             style={{
               width: 70,
               height: 70,
-              right: -120,
-              top: 600,
+              right: Dimensions.get('window').width * -0.281,
+              top: Dimensions.get('window').height * 0.66,
               borderRadius: 50,
               backgroundColor: '#fff',
               overflow: 'hidden',
@@ -154,7 +170,10 @@ export default function CameraScreen({ predict }) {
             onPress={takePicture}
             disabled={loading}
           >
-            <Text> </Text>
+            <Image
+              style={styles2.cam}
+              source={require('../../assets/img/circle.png')}
+            />
           </TouchableRipple>
         </View>
         {loading && (

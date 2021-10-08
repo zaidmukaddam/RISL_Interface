@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable global-require */
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/prop-types */
@@ -70,9 +69,8 @@ const GestureRecognitionScreen = ({ route, navigation }) => {
           <MaterialCommunityIcons
             name={
               prediction
-                ? `${
-                    numerics.match(prediction) ? 'numeric' : 'alpha'
-                  }-${prediction}-box-outline`
+                ? `${numerics.match(prediction) ? 'numeric' : 'alpha'
+                }-${prediction}-box-outline`
                 : 'checkbox-blank-outline'
             }
             size={120}

@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-console */
 /* eslint-disable global-require */
 import React, { useState } from 'react';

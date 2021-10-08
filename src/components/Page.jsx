@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-shadow */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-use-before-define */
@@ -11,12 +10,12 @@ import { View, StyleSheet } from 'react-native';
 import { Text } from 'react-native-paper';
 
 const Page = ({ title, info1, info2 }) => (
-    <View>
-      <Text style={styles.text1}>{title}</Text>
-      <Text style={styles.text2}>{info1}</Text>
-      <Text style={styles.text3}>{info2}</Text>
-    </View>
-  );
+  <View>
+    <Text style={styles.text1}>{title}</Text>
+    <Text style={styles.text2}>{info1}</Text>
+    <Text style={styles.text3}>{info2}</Text>
+  </View>
+);
 
 const styles = StyleSheet.create({
   text1: {

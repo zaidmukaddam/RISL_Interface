@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-shadow */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-use-before-define */
@@ -38,4 +37,4 @@ export const FormTextInput = (props) => {
   );
 };
 
-export const FormInput = () => {};
+export const FormInput = () => { };

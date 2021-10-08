@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable global-require */
 /* eslint-disable react/prop-types */
 

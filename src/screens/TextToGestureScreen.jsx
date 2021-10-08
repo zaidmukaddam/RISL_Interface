@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-use-before-define */
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
